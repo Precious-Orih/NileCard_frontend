@@ -1,24 +1,27 @@
 body{
-    background-color: rgb(221, 220, 219);
     font-family: Arial, Helvetica, sans-serif;    
-    display: flex;
-    font-size: 14px;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: #fff url(./assets/images/bg.jpg);
+    
+    padding: 0;
+    margin: 0;
 }
-#main-container{
+.centre{
+    display: flex;
+    background: #fff url(../assets/images/bg.jpg);
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+}
+#main-index{
     background-color: white;
     border-radius: 10px;
     padding: 30px;
     width: 400px;
     height: 475px;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
-    
 }
 
-h3{
+.login{
     color: rgb(39, 108, 42);
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,12 +34,6 @@ p{
     font-size: 14px;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
-}
-hr{
-    margin: 0;
-    height: 1.5px;
-    border: none;
-    background-color: rgb(118, 196, 98);
 }
 
 input{
@@ -87,23 +84,23 @@ a{
     color: #1d4da1;
     text-decoration: none;
 }
-ul{
+.goto ul{
     width: 100%;
     margin-top: 25px;
     display: inline-block;
     padding: 0;
 }
-ul li{
+.goto ul li{
     list-style: none;
     float: left;
     padding: 10px;
     margin-right: 10px;
 }
 
-ul li .fa{
+.goto ul li .fa{
     font-size: 18px;
 }
-ul li span{
+.goto ul li span{
     display: block;
     padding-left: 23px;
     font-size: 14px;
@@ -119,4 +116,133 @@ footer{
     font-size: 10.666px; 
     font-size: 8pt;
     text-align: center;
+    
+}
+nav{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.15);    
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+}
+.small-profile{
+    padding: 0 15px;
+    height: 40px;
+    border-radius: 50%;
+}
+.right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.nile-logo{
+    height: 50px;
+    padding: 10px 15px;
+}
+.fa-bars{
+    font-size: 15px;
+    padding: 28px 15px;
+    color: #a6b7bf;
+}
+.fa-bars:hover, .nile-logo:hover, .small-profile:hover{
+    color: black;
+}
+.main-dashboard{
+    display: flex;
+    flex-direction: row;
+    background-color: #e8e8e8;
+    gap: 2%;
+}
+
+.menu-bar{
+    flex: 5%;
+    background-color: #1d4ca1;
+    min-width:  70px;
+    overflow: hidden;
+}
+.menu-bar ul{
+    margin-top: 0;
+    list-style-type: none;
+    padding: 0;
+}
+.menu-bar li{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.menu-bar i{
+    padding: 25px 20px;
+    font-size: 25px;
+    color: cornflowerblue;
+}
+.menu-bar i:hover{
+    background-color: cornflowerblue;
+    color: #1d4ca1;
+}
+.profile {
+    height: 800px;
+    flex: 22.5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.profile img{
+    margin: 70px 20px 20px 20px;
+    
+
+}
+.profile h3{
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+}
+.profile h4{
+    background-color: #1d4ca1;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.profile hr{
+    width: 100%;
+    background-color:#999;
+    border: none;
+    height: 0.75px;
+
+}
+.profile h5{
+    margin: 10px auto 0 20px;
+    font-size: 12px;
+    text-align: left;
+    color: #626262;
+
+}
+.building-div{
+    height: 400px;
+    flex: 72.5%;
+    background-color: rgb(80, 79, 79);
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2% 2%;
+    margin: 40px 2% 0 0;
+    padding: 2%;
+    /* justify-content: space-evenly; */
+}
+.building-div img{
+    background-color: aqua;
+    height: 175px;
+    width: 225px;
+    border-radius: 5px;
 }
