@@ -1,128 +1,115 @@
+/* navy: #2f4156
+teal: #567c8d
+sky blue: #c8d9e6
+beige: #f5efeb
+white: #ffffff */
 body{
     font-family: Arial, Helvetica, sans-serif;    
-    
     padding: 0;
     margin: 0;
 }
 .centre{
     display: flex;
-    background: #fff url(../assets/images/bg.jpg);
-        font-size: 14px;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
+    background: #fff url(./src/background.png);
+    background-size: 50px 50px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 #main-index{
     background-color: white;
     border-radius: 10px;
     padding: 30px;
     width: 400px;
-    height: 475px;
-    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+    height: 500px;
+    box-shadow: 7px 7px 20px #2f415640;
+    text-align: center;
 }
 
-.login{
-    color: rgb(39, 108, 42);
+#main-index h2{
+    color: #567c8d;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 25px 0 0 0;
-    font-size: 19.5px;
+    font-size: 30px;
+    margin: 30px 0px 10px;
 }
-p{
+#main-index p{
     margin: 0;
-    color: rgb(39, 108, 42);
-    font-size: 14px;
-    font-weight: 300;
+    color: #567c8d;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input{
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginForm input{
     width: 340px;
     height: 60px;
-    margin-bottom: 10px; 
-    padding:  0px 7px;
-    border: solid #DFDFDF 1px; 
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    outline: none;
-    
+    margin-bottom: 0; 
+    padding:  0px 20px;
+    border: solid #567c8d 1px; 
+    border-radius: 30px;
+    background-color: #f7f3f0;
+    outline: none;    
 }
 #idNumber{
     margin-top: 25px;
 }
-input:focus{
-    color:#1d4da1;
+#loginForm input:focus{
+    color:#2f4156;
+    background-color: #c8d9e6;
 }
-input::placeholder{
-    color: #ccc;
+#loginForm input::placeholder{
+    color: #567c8d;
     font-weight: 500;
 }
-input:focus::placeholder{
-    color: #1d4da1;
+#loginForm input:focus::placeholder{
+    color: #2f4156;
     font-weight: 900;
 }
-#password{
-    margin-bottom: 40px;
-}
-button{
-    border: 1px solid #1d4ca1;
-    border-radius: 2px;
-    background-color: #1d4da1;
-    color: aliceblue;
-    width: 100px;
-    height: 30px;
+
+#loginForm button{
+    border: none;
+    border-radius: 30px;
+    background-color: #2f4156;
+    color: #f5efeb;
+    width: 340px;
+    height: 60px;
+    font-size: 20px;
     font-weight: 700;
-    margin: 0;
-    padding: 0 15px;
+    padding: 0 20px;
     line-height: 30px;
+    box-sizing: content-box;
 }
-.forget{
-    line-height: 30px;
-    margin: 0 0 0 25px;
-}
-a{
-    color: #1d4da1;
+
+#loginForm a{
+    color: #567c8d;
     text-decoration: none;
-}
-.goto ul{
-    width: 100%;
-    margin-top: 25px;
-    display: inline-block;
-    padding: 0;
-}
-.goto ul li{
-    list-style: none;
-    float: left;
-    padding: 10px;
-    margin-right: 10px;
-}
-
-.goto ul li .fa{
-    font-size: 18px;
-}
-.goto ul li span{
-    display: block;
-    padding-left: 23px;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-strong{
-    font-weight: bolder;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
 footer{
-    color: #999; 
-    color: #1d4ca1; 
+    color: #567c8d; 
     font-size: 10.666px; 
     font-size: 8pt;
-    text-align: center;
-    
+    text-align: center;    
+    margin: 10px;
 }
-nav{
+.dashboard{
+    /* background: url(/assets/images/background.png);
+    background-size: 50px 50px;  */
+    background-color: #c8d9e6;
+}
+.dashboard nav{
     width: 100%;
     height: 70px;
     background: #fff;
-    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.15);    
+    box-shadow: 7px 7px 20px rgba(47, 65, 86, 0.2);    
     display: flex;
     padding: 0;
     margin: 0;
@@ -154,13 +141,13 @@ nav{
 .main-dashboard{
     display: flex;
     flex-direction: row;
-    background-color: #e8e8e8;
     gap: 2%;
+    width: 100%;
 }
 
 .menu-bar{
-    flex: 5%;
-    background-color: #1d4ca1;
+    flex: 7%;
+    background-color: #2f4156;
     min-width:  70px;
     overflow: hidden;
 }
@@ -175,37 +162,40 @@ nav{
     width: 100%;
 }
 .menu-bar i{
-    padding: 25px 20px;
-    font-size: 25px;
-    color: cornflowerblue;
+    padding: 25px 0;
+    width: 100%;
+    font-size: 30px;
+    color: #f5efeb;
 }
 .menu-bar i:hover{
-    background-color: cornflowerblue;
-    color: #1d4ca1;
+    background-color: #f5efeb;
+    color: #2f4156;
 }
 .profile {
     height: 800px;
-    flex: 22.5%;
+    flex: 20%;
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+    padding: 30px 0;
 }
-.profile img{
-    margin: 70px 20px 20px 20px;
-    
-
+.profile image{
+    margin: 20px;
+    height: 250px;
+    width: 200px;
 }
 .profile h3{
     margin: 0;
     padding: 10px;
     font-size: 30px;
+    color: #567c8d;
 }
 .profile h4{
-    background-color: #1d4ca1;
-    color: #fff;
+    background-color: #2f4156;
+    color: #f5efeb;
     width: 100%;
     text-align: center;
     margin: 0;
@@ -213,7 +203,7 @@ nav{
 }
 .profile hr{
     width: 100%;
-    background-color:#999;
+    background-color:#567c8d;
     border: none;
     height: 0.75px;
 
@@ -222,27 +212,27 @@ nav{
     margin: 10px auto 0 20px;
     font-size: 12px;
     text-align: left;
-    color: #626262;
+    color: #567c8d;
 
 }
 .building-div{
     height: 400px;
-    flex: 72.5%;
-    background-color: rgb(80, 79, 79);
+    flex: 67%;
+    /* background-color: rgb(80, 79, 79); */
     border-radius: 2px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
     gap: 2% 2%;
     margin: 40px 2% 0 0;
-    padding: 2%;
-    /* justify-content: space-evenly; */
+    padding: 0;
+    justify-content: space-evenly;
 }
 .building-div img{
     background-color: aqua;
     height: 175px;
     width: 225px;
     border-radius: 5px;
+    margin: 0;
 }
